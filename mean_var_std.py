@@ -21,7 +21,6 @@ def calculate(list):
 
       for i, operation in enumerate(operations.keys()):
         results[i] = [operations[operation](matrix, axis=0).tolist(), operations[operation](matrix, axis=1).tolist(), operations[operation](matrix)]
-
         calculations[operation] = results[i]
 
     else:  
